@@ -64,9 +64,6 @@ author:
   links:
     - label: "Boston"
       icon: "fas fa-fw fa-location"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://ethankim00/ethankim00.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ethankim00/"
