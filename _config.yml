@@ -81,7 +81,6 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/ethan-kim-9403a5149"
 
-
 defaults:
   # _posts
   - scope:
