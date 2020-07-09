@@ -21,7 +21,7 @@ twitter_username: username
 github_username: ethankim00
 minimal_mistakes_skin: dark
 search: true
-
+share: false
 # Updates
 repository: "ethankim00/ethankim00.github.io"
 
