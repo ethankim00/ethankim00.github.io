@@ -5,10 +5,9 @@ categories:
 tags:
 ---
 
-# Training an AI to Play Incan Gold
 ## Introduction
 
-Along with my partners, I implemented a playable version of the popular board game Incan gold as my final project for my CS50 class. I focused on creating AI opponents that were trained by playing against themselves for thousands of games. Incan Gold is a simple yet incredibly fun push-your-luck style strategy game in which players compete to extract loot from an Incan temple. Each turn, a player must choose to either continue onwards into the temple incurring more danger and the possibility of greater reward, or choose to play it safe and go home with their current winnings. 
+I implemented a playable version of the  board game Incan gold as my final project for my introductory computer science class CS50. I focused on creating AI opponents that were trained by playing against themselves for thousands of games. Incan Gold is a simple yet incredibly fun push-your-luck style strategy game in which players compete to extract loot from an Incan temple. Each turn, a player must choose to either continue onwards into the temple incurring more danger and the possibility of greater reward, or choose to play it safe and go home with their current winnings. 
 
 The gameplay is very simple: each turn players make their decision and a card is flipped. The cards can be treasure cards with a point value that is evenly distributed among the active players, or a danger card indicating that the expedition might no longer be safe. Whenever a loot card has a value that cannot be evenly distributed, the remainder is left on the path and can be claimed by any player choosing to leave in a later round. If a second danger card of the same type is drawn, then players who are still active must forfeit their winnings. The game consists of five rounds after which a winner is declared. Strategies can become fairly complex as players must consider the potential danger of going forward as well as the potential reward of sharing loot with fewer competitors. 
 
