@@ -12,7 +12,7 @@ tags:
  During quarantine my family spent a lot of time playing bananagrams. Being our competitive selves we played a more fast-paced and intensive variation of the game known as Bandit. In Bandit players take turns flipping letter tiles. Whenever a word can be formed, the first player to spot it takes those letters and places the word in front of them. The twist is that letters can be added to an existing word to create a new word and thus players can steal words from each other. For example, Player A might have the word ‘car’ stolen by Player B who adds the letter e to spell race. A more complex example is adding the letter ‘t” 
 
 Algorithm 
-I wanted to build a tool to help me win and the game and find new possible words to play. 
+I wanted to build a tool to help me win the game and find new possible words to play. 
 Given a word, all valid words that can be formed with one additional letter can be displayed. However, simple brute force search over all possibilities is highly inefficient, even at shorter lengths. Checking all possible permutations of a word with all possible additional letters is an O(n!) algorithm. By preprocessing the words, search time can be reduced to O(1). 
 
 ## Methods
