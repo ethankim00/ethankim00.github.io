@@ -22,10 +22,14 @@ If we have k regression trees, our prediction for y is the sum of the prediction
 
 {% raw %}
 $$l(\hat(y), y) = \sum_i^n (\hat{y}_i - y_i)^2$$
+{% endraw %}
+{% raw %}
 $$
 \frac{\partial l}{\partial y}l(\hat{y}, y) = 2\sum_i^n (\hat{y}_i - y_i)
 $$
 {% endraw %}
+
+
 
 We can see that the derivative is proportional to the resiudals between the actual and predicted values. This result provides the intuition for fiting boosted models on the residuals from a models output. The additive outputs of each subsequent model minimize the loss by stepping along the gradient. For the case of tree ensembles subsequent trees assign each observation to a leaf node with a weight that represents the optimal "tweak" to the predictions of the previous model.
 
@@ -34,10 +38,13 @@ Gradient boosting uses a computation of the gradient of the loss function to det
 $$
 L(\phi) = \sum_il(\hat{y}_i, y) + \sum_k \Omega (f_k)
 $$
+{% endraw %}
+{% raw %}
+$$
 \Omega (f) = \gamma T + \frac{1}{2} \lambda||w||^2
 $$
-Here T is the number of leaf nodes. In this example, we are using l1 regression
 {% endraw %}
+Here T is the number of leaf nodes. In this example, we are using l1 regression
 
 In the xgboost algorithm we sequentially fit a series of learners. At a specific step, the loss will depend on the previous models output as well as the current models updates:
 {% raw %}
