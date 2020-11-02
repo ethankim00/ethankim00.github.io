@@ -53,10 +53,47 @@ L^{(t)} = \sum_i^n l(y_u, \hat{y}_i^{(t-1)} + f_t(x_i)) + \Omega (f_t)
 $$
 {% endraw %}
 
-This loss can be approximated using a second order Taylor series? 
+This loss can be approximated using a second order Taylor series:
+{% raw %}
+$$
+L^{(t)} \approx \sum_{i =1}^n [l(y_i, \hat{y}^{(t-1)}) +g_if_t(x_i) + \frac{1}{2}h_if_t^2(x_i)] + \Omega(f_t)
+$$
+{% endraw %}
+{% raw %}
+Here $g_i = \partial_{\hat{y}^{(t-1)}}l(y_i, \hat{y}^{(t-1)})$ and $h_i = \partial_{\hat{y}^{(t-1)}}^2l(y_i, \hat{y}^{(t-1)})$
+{% endraw %}
 
 Why do we use this Taylor series approximation for the loss? The purpose is to represent the loss as in expression in terms of the parameters of the tree nodes that can be optimized. 
 
+To continue, we can remove the constant terms that do not depend on f.
+{% raw %}
+$$
+\hat{L}^{(t)} = \sum_{i=1}^n [g_i f_t(x_i) + \frac{1}{2}h_i f_t^2 (x_i)] + \Omega(f_t)
+$$
+{% endraw %}
+
+{% raw %}
+We can define $I_j = \{i|q(x_i)\}$ to be the set of observations that fall within leaf j of a tree
+{% endraw %}
+
+{% raw %}
+$$
+\tilde{L}^{(t)} = \sum_{i =1}^n [g_if_t(x_i) + \frac{1}{2}h_if_t^2(x_i)] + \gamma T + \frac{1}{2}\lambda \sum_{j=1}^2w_j^2
+$$
+{% endraw %}
+
+{% raw %}
+$$
+= \sum_{j=1}^T[(\sum_{i \in Ij} g_i)w_j + \frac{1}{2}(\sum_{i \in I_j} h_i + \lambda) w_j^2] + \gamma T
+$$
+{% endraw %}
+{% raw %}
+We can rewrite the loss function approximation as a sum over all leaf nodes. The predictions, $f_t(x_i)$ are equal to the weight $w_j$ for the node in which observation $x_i$ falls. To find the optimal $w_j$, use calculus:
+{% endraw %}
+
+
+
+See analogy to newton's method
 
 [contact me](mailto:ethan_kim@college.harvard.edu)
 
