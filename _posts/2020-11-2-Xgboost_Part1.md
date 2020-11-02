@@ -28,10 +28,26 @@ $$
 $$
 {% raw %}
 
-We can see that the derivative is proportional to the resiudals between the actual and predicted values. This result provides the intuition for fiting boosted models on the residuals from a models output. The additive outputs of each subsequent model minimize the loss by stepping along the gradient. For the case of tree ensembles subsequent trees assign each observation to a leaf node with a weight that represents the 
+We can see that the derivative is proportional to the resiudals between the actual and predicted values. This result provides the intuition for fiting boosted models on the residuals from a models output. The additive outputs of each subsequent model minimize the loss by stepping along the gradient. For the case of tree ensembles subsequent trees assign each observation to a leaf node with a weight that represents the optimal "tweak" to the predictions of the previous model.
 
-Gradient boosting uses a computation of the gradient to 
+Gradient boosting uses a computation of the gradient of the loss function to determine what weights to use. For Xgboost, the loss function includes a regularization term:
+{% raw %}
+$$
+L(\phi) = \sum_il(\hat{y}_i, y) + \sum_k \Omega(f_k)
+$$
+\Omega(f) = \gamma T + \frac{1}{2} \lambda||w||^2
+$$
+Here T is the number of leaf nodes. In this example, we are using l1 regression
+{% raw %}
 
+In the xgboost algorithm we sequentially fit a series of learners. At a specific step, the loss will depend on the previous models output as well as the current models updates:
+{% raw %}
+$$
+L^{(t)} = \sum_i^n l(y_u, \hat{y}_i^{(t-1)} + f_t(x_i)) + \Omega(f_t)
+$$
+{% raw %}
+
+This loss can be approximated using a second order Taylor series? 
 
 
 [contact me](mailto:ethan_kim@college.harvard.edu)
