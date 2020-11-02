@@ -60,7 +60,7 @@ L^{(t)} \approx \sum_{i =1}^n [l(y_i, \hat{y}^{(t-1)}) +g_if_t(x_i) + \frac{1}{2
 $$
 {% endraw %}
 {% raw %}
-Here \(g_i = \partial_{\hat{y}^{(t-1)}}l(y_i, \hat{y}^{(t-1)})$ and $h_i = \partial_{\hat{y}^{(t-1)}}^2l(y_i, \hat{y}^{(t-1)})$
+Here $g_i = \partial_{\hat{y}^{(t-1)}}l(y_i, \hat{y}^{(t-1)})$ and $h_i = \partial_{\hat{y}^{(t-1)}}^2l(y_i, \hat{y}^{(t-1)})$
 {% endraw %}
 
 Why do we use this Taylor series approximation for the loss? The purpose is to represent the loss as in expression in terms of the parameters of the tree nodes that can be optimized. 
@@ -73,7 +73,7 @@ $$
 {% endraw %}
 
 {% raw %}
-We can define \(I_j = (i|q(x_i))\( to be the set of observations that fall within leaf j of a tree
+We can define $I_j = (i|q(x_i))$ to be the set of observations that fall within leaf j of a tree
 {% endraw %}
 
 {% raw %}
@@ -88,7 +88,7 @@ $$
 $$
 {% endraw %}
 {% raw %}
-We can rewrite the loss function approximation as a sum over all leaf nodes. The predictions, \(f_t(x_i)\( are equal to the weight \(w_j\( for the node in which observation \(x_i\( falls. To find the optimal \(w_j\(, use calculus:
+We can rewrite the loss function approximation as a sum over all leaf nodes. The predictions, $f_t(x_i)$ are equal to the weight $w_j$ for the node in which observation $x_i$ falls. To find the optimal $w_j$, use calculus:
 {% endraw %}
 
 Within a single leaf node j, we can calculate the derivative of the loss with respect to the weight:
@@ -101,6 +101,31 @@ $$
 {% raw %}
 $$
 = (\sum_{i \in Ij} g_i) + (\sum_{i \in Ij} h_i + \lambda)w_i = 0
+$$
+{% endraw %}
+Solving for y we get:
+{% raw %}
+$$
+w_j^* = \frac{-\sum_{i \in I_J} g_i}{\sum_{i \in I_J} h_i + \lambda}
+$$
+{% endraw %}
+
+Intuitively, we can see the effect of the regularization parameter. A higher L2 penalty shrinks the weight estimates towards zero.
+
+Plugging in, we can get the overall loss to be:
+
+{% raw %}
+$$
+\tilde{L}^{(t)}_q = \frac{1}{2} \sum_{j =1}^T \frac{(\sum_{i \in I_j}g_i)^2 }{\sum_{i \in I_j}h_i + \lambda} + \gamma T
+$$
+{% endraw %}
+
+
+Given this, the decision criteria for a split in the tree will be whichever split maximizes the reduction in loss
+
+{% raw %}
+$$
+L_{\text{split}} = \frac{1}{2}\bigg[\frac{(\sum_{i \in I_L} g_i)^2}{\sum_{i \in I_L}h_i + \lambda} + \frac{(\sum_{i \in I_R} g_i)^2}{\sum_{i \in I_R}h_i + \lambda} - \frac{(\sum_{i \in I} g_i)^2}{\sum_{i \in I}h_i + \lambda}\bigg] - \gamma
 $$
 {% endraw %}
 
