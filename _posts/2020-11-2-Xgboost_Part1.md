@@ -129,8 +129,25 @@ L_{\text{split}} = \frac{1}{2}\bigg[\frac{(\sum_{i \in I_L} g_i)^2}{\sum_{i \in 
 $$
 {% endraw %}
 
+We can see how the gamma regularization parameter sets a threshold for how large the loss reduction must be.
 
-See analogy to newton's method
+
+## Intuition
+What is the intuition behind using a taylor approximation and calculating a different estimator rather than simply following the gradients? To answer, we can notice that updating our estimates with nudges:
+{% raw %}
+$$
+w_j^* = \frac{-\sum_{i \in I_J} g_i}{\sum_{i \in I_J} h_i + \lambda}
+$$
+{% endraw %}
+
+Is similar to updating parameter estimates using newton's method:
+{% raw %}
+$$
+x^{(i+1)} = x^{(i)} - \frac{\nabla f(x^{(i)})}{\text{Hess}f(x^{(i)})}
+$$
+{% endraw %}
+
+Thus in Xgboost we are using information from the Hessian in order to tweak our estimates and approach the minimum of the loss function more quickly
 
 [contact me](mailto:ethan_kim@college.harvard.edu)
 
