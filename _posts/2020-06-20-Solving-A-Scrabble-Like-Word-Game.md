@@ -25,8 +25,9 @@ For each letter in the alphabet:
 3. Look up words that map to that key
 
 
-
 Thus possible words can be retrieved very quickly. 
+
+
 
 [contact me](mailto:ethan_kim@college.harvard.edu)
 
