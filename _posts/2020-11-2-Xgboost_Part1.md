@@ -44,7 +44,7 @@ $$
 \Omega (f) = \gamma T + \frac{1}{2} \lambda||w||^2
 $$
 {% endraw %}
-Here T is the number of leaf nodes. In this example, we are using l1 regression
+Here T is the number of leaf nodes. In this example, we are using l2 regression
 
 In the xgboost algorithm we sequentially fit a series of learners. At a specific step, the loss will depend on the previous models output as well as the current models updates:
 {% raw %}
