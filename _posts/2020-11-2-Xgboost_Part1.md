@@ -63,7 +63,7 @@ $$
 Here $g_i = \partial_{\hat{y}^{(t-1)}}l(y_i, \hat{y}^{(t-1)})$ and $h_i = \partial_{\hat{y}^{(t-1)}}^2l(y_i, \hat{y}^{(t-1)})$
 {% endraw %}
 
-Why do we use this Taylor series approximation for the loss? The purpose is to represent the loss as in expression in terms of the parameters of the tree nodes that can be optimized. 
+Why do we use this Taylor series approximation for the loss? The purpose is to represent the loss as an expression in terms of the parameters of the tree nodes that can be optimized. 
 
 To continue, we can remove the constant terms that do not depend on f.
 {% raw %}
