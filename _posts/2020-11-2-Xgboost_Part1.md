@@ -150,8 +150,8 @@ $$
 Thus in Xgboost we are using information from the Hessian in order to tweak our estimates and approach the minimum of the loss function more quickly
 
 
-## Future Steps
-In future articles I will discuss other algorithmic advantages of Xgboost including using weighted quantile search for approximate best split and sparsity aware split finding for handling sparse data. 
+## Other Features
+Other  algorithmic advantages of Xgboost include using weighted quantile search for approximate best split and sparsity aware split finding for handling sparse data. 
 
 [contact me](mailto:ethan_kim@college.harvard.edu)
 
