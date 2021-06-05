@@ -50,14 +50,14 @@ Tracker updates were parallelized across different threads using OpenMP. The key
 
 Varying numbers of threads from 0-16 were applied. The speedups achieved using different numbers of threads are shown below. Overall we were able to achieve a maximum 3.6x speedup using openMP.
 
-![OpenMP graph](https://github.com/mirgow/CS205ParallelImaging/blob/main/img/openmptracking.png)
-
+![Results](/assets/images/opencv/openmptracking.png)
 
 ### Downsizing
 
 To achieve the necessary speedup for realtime (30FPS) applications we downsized each image prior to running the object tracking algorithm. This image preprocessing step was sped up by over 2x by using the CUDA enabled GPU algorithm.
 
-![Speedups](https://github.com/mirgow/CS205ParallelImaging/blob/main/img/KCF%20Algorithm%20Speedup%20With%20Built-Up%20Features.png)
+
+![Speedup](/assets/images/opencv/KCF%20Algorithm%20Speedup%20With%20Built-Up%20Features.png)
 
 ### YOLO Approach
 
@@ -72,12 +72,13 @@ An alternative to online object tracking algorithms is simply to treat each fram
 ## Demos
 
 ### Object Tracking
-!["Tracking"](https://github.com/mirgow/CS205ParallelImaging/blob/main/img/tracking.gif)
+
+![Tracking](/assets/images/opencv/tracking.gif)
 
 ### Object Detection
 
-!["Detection"](https://github.com/mirgow/CS205ParallelImaging/blob/main/img/detection2.gif)
+![Detection](/assets/images/opencv/detection2.gif)
 
 ### Livestream
 
-!["Live Tracking"](https://github.com/mirgow/CS205ParallelImaging/blob/main/img/livedemo.gif)
+![LiveStream](/assets/images/opencv/livedemo.gif)
