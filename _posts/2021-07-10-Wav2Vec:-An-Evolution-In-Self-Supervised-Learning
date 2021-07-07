@@ -1,0 +1,10 @@
+---
+title: "Training an AI to play Incan Gold"
+last_modified_at: 2021-07-10T16:20:02-05:00
+categories: audio
+tags:
+---
+
+## What is Wav2Vec
+
+Wav2vec is a series of papers from FAIR that develop methods for self-supervised learning of audio representations. Wav2Vec achieves impressive results

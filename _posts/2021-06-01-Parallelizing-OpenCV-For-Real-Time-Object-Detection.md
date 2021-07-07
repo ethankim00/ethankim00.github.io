@@ -7,7 +7,7 @@ tags:
 
 ## Introduction
 
-Computer vision advances have enabled novel applications such as object detection and tracking.  Naive object tracking implementations operate at extremely slow speeds. My baseline implementation ran at .25 FPS on 4K images. Optimizing and speeding up an object detection algorithm to run in real time has applications realms such as sports analytics, medical scanning, surveillance and security, self-driving cars, and more. For this project we used the Histogram of Oriented Gradients for object detection and an Kernelized Correlation Filter for object tracking. In addition, we experimented with Deep Learning Methods such as GOTURN and YOLOv3. 
+Computer vision advances have enabled novel applications such as object detection and tracking.  Naive object tracking implementations operate at extremely slow speeds. My baseline implementation ran at .25 FPS on 4K images. Optimizing and speeding up an object detection algorithm to run in real time has applications realms such as sports analytics, medical scanning, surveillance and security, self-driving cars, and more. For this project we used the Histogram of Oriented Gradients for object detection and Kernelized Correlation Filter for object tracking. In addition, we experimented with Deep Learning Methods such as YOLOv3. 
 
 
 
