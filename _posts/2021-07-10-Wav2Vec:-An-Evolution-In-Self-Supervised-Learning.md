@@ -1,8 +1,10 @@
 ---
 title: "Wav2Vec part 1: Wav2Vec and VQwav2vec"
 last_modified_at: 2021-07-10T16:20:02-05:00
-categories: audio
+categories: paper_review
 tags:
+    - audio
+    - self_supervised_learning
 ---
 
 ## What is Wav2Vec?

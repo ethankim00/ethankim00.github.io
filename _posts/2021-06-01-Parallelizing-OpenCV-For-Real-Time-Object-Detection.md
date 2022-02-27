@@ -2,7 +2,10 @@
 title: "Parallelizing OpenCV For Real Time Object Detection"
 last_modified_at: 2021-07-01T16:20:02-05:00
 categories:
+    - project
 tags:
+    - computer_vision
+    - parallelization
 ---
 
 ## Introduction

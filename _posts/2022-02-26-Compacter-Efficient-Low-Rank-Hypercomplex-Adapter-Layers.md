@@ -3,6 +3,8 @@ title: "Compacter"
 last_modified_at: 2022-02-26T16:20:02-05:00
 categories: paper_review
 tags: 
+    - "parameter_efficiency"
+    - "adapters"
 ---
 
 # Compacter
