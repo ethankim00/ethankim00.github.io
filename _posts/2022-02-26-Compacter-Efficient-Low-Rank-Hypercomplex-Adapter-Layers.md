@@ -32,7 +32,7 @@ and with five I can make him wiggle his trunk.
     - outer product of two vectors is a rank 1 matrix
     - Kronecker product of two matrices is a large matrix
     
-    ![Untitled](Compacter%20a9a7d/Untitled.png)
+    ![Untitled](/assets/images/Compacter%20a9a7d/Untitled.png)
     
 - Kronecker product is also known as the `matrix direct` product
     - is bilinear and associative
@@ -41,7 +41,7 @@ and with five I can make him wiggle his trunk.
     - bottlenect
     - opposite of Transformer FFN
     
-    ![Untitled](Compacter%20a9a7d/Untitled%201.png)
+    ![Untitled](/assets/images/Compacter%20a9a7d/Untitled%201.png)
     
 - In a parameterized hypercomplex multiplication layer the weight matrix is a sum of `kronecker products`
     
@@ -56,7 +56,7 @@ and with five I can make him wiggle his trunk.
 - In Compacter the adapter weights are a product of `shared task specific parameters and adapter layer specific parameters`
     - Factor both up and down projection weights
     
-    ![Untitled](Compacter%20a9a7d/Untitled%202.png)
+    ![Untitled](/assets/images/Compacter%20a9a7d/Untitled%202.png)
     
 - What two techniques does the compacter paper introduce to make hypercomplex adapters more efficient?
     - shared information across adapters
@@ -65,7 +65,7 @@ and with five I can make him wiggle his trunk.
     
 - Low rank parameterization is achieved in hypercomplex adapters by `restricting B to be of rank 1`
     
-    ![Untitled](Compacter%20a9a7d/Untitled%203.png)
+    ![Untitled](/assets/images/Compacter%20a9a7d/Untitled%203.png)
     
 - Compacter base model is `T5 base`
     
