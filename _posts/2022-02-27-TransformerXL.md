@@ -3,9 +3,9 @@ title: "TransformerXL"
 last_modified_at: 2022-02-27T21:17:21-05:00
 categories: paper_review
 tags:
-	- Machine Learning
-	- NLP
-	- Transformer
+    - Machine Learning
+    - NLP
+    - Transformer
 ---
 
 - What is the name of the Transformer XL paper?
