@@ -24,7 +24,7 @@ The T5 paper is a classic paper and is currently widely used as a standard model
     
 - T5 frames every problem as a `Text to Text Task`
     
-    ![%20Explori%20bc626/Untitled.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled.png)
+    ![Exploribc626/Untitled.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled.png)
     
 - T5 introduces the `Colossal Clean Crawled Corpus`
     
@@ -38,7 +38,7 @@ The T5 paper is a classic paper and is currently widely used as a standard model
 
 - In T5 the supervised pretraining object is `text to text with the target being the masked tokens`
     
-    ![%20Explori%20bc626/Untitled%201.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%201.png)
+    ![Exploribc626/Untitled1.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled1.png)
     
 - T5 was trained for `1/4` as many pretraining steps as BERT base
     - note: it is also a much larger model
@@ -48,7 +48,7 @@ The T5 paper is a classic paper and is currently widely used as a standard model
     
     - Example: English prefix for NMT
     
-    ![%20Explori%20bc626/Untitled%202.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%202.png)
+    ![Exploribc626/Untitled2.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled2.png)
     
 - Prefix Masking is useful in NMT to allow the `input sequence to attend to itself`
 - Prefix Masking in T5 is analogous to BERT for classification in that `the input can attend to itself`
@@ -59,17 +59,17 @@ The T5 paper is a classic paper and is currently widely used as a standard model
     - Assume the number of parameters/ flops is roughly the same
     - They compared:
     
-    ![%20Explori%20bc626/Untitled%203.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%203.png)
+    ![Exploribc626/Untitled3.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled3.png)
     
 - The T5 paper experiments `validate the importance` of the denoising objective from BERT
     - Give better performance over simple LM
     
-    ![%20Explori%20bc626/Untitled%204.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%204.png)
+    ![Exploribc626/Untitled4.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled4.png)
     
 - The T5 paper compares various unsupervised objectives including BERT style `prefix language modeling` `deshuffling`
     - BERT style does the best
     
-    ![%20Explori%20bc626/Untitled%205.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%205.png)
+    ![Exploribc626/Untitled5.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled5.png)
     
 - What simplifications to BERT pretraining objectives does the TF paper explore?
     - Only replacing with mask tokens (BERT replaces 15% with random tokens)
@@ -78,42 +78,42 @@ The T5 paper is a classic paper and is currently widely used as a standard model
     
     All showed similar performance
     
-    ![%20Explori%20bc626/Untitled%206.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%206.png)
+    ![Exploribc626/Untitled6.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled6.png)
     
-    ![%20Explori%20bc626/Untitled%207.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%207.png)
+    ![Exploribc626/Untitled7.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled7.png)
     
 
 - The T5 variants of dropping corrupted tokens or replacing corrupted spans is appealing because it `reduces training time` compared to the regular BERT objective
     - the target sequence has to attend over a smaller number of tokens
     
-    ![%20Explori%20bc626/Untitled%208.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%208.png)
+    ![Exploribc626/Untitled8.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled8.png)
     
 - The T5 paper compared the effect of different corruption rates during pretraining and showed `no significant difference`
     - Stick with 15% from BERT
     - note: would expect performance to eventually degrade at higher rates
     
-    ![%20Explori%20bc626/Untitled%209.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%209.png)
+    ![Exploribc626/Untitled9.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled9.png)
     
 - T5 showed that corrupting spans rather than individual tokens had `small effect`
     - Larger spans do have lower computational cost, due to representation as one token
     - Similar result was found in the spanBERT paper
     
-    ![%20Explori%20bc626/Untitled%2010.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%2010.png)
+    ![Exploribc626/Untitled10.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled10.png)
     
 - Overall the T5 study on pretraining objectives showed `small differences among MLM variants`
     - Should also consider which variants have the lowest pretraining time
     
-    ![%20Explori%20bc626/Untitled%2011.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%2011.png)
+    ![Exploribc626/Untitled11.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled11.png)
     
 - T5 compared different pretraining datasets and showed that domain specific datasets impacted `performance on specific downstream tasks`
     - Should pretrain on a relevant dataset for your task
     
-    ![%20Explori%20bc626/Untitled%2012.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%2012.png)
+    ![Exploribc626/Untitled12.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled12.png)
     
 - T5 experiments showed performance `decreased` with less training data
     - Comparison is with equal numbers of pretraining steps
     
-    ![%20Explori%20bc626/Untitled%2013.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%2013.png)
+    ![Exploribc626/Untitled13.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled13.png)
     
     - Training on the full dataset once outperformed training on 1/64th of the dataset 64 times
     - note: this provides decent empirical support for the current paradigm of training large language models for a single epoch
@@ -130,7 +130,7 @@ The T5 paper is a classic paper and is currently widely used as a standard model
     - was best to train all parameters
     - this is similar to the finding in the GOPHER finetuning experiments
     
-    ![%20Explori%20bc626/Untitled%2014.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%2014.png)
+    ![Exploribc626/Untitled14.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled14.png)
     
 - What approaches to multitask learning are explored in T5?
     
@@ -140,7 +140,7 @@ The T5 paper is a classic paper and is currently widely used as a standard model
     - Temperature Scaled Mixing:
         - increasing temperature decreases imbalance between dataset sizes
     
-    ![%20Explori%20bc626/Untitled%2015.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%2015.png)
+    ![Exploribc626/Untitled15.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled15.png)
     
 
 - How does the T5 paper reveal the "bitter lesson" in machine learning?
@@ -157,13 +157,13 @@ The T5 paper is a classic paper and is currently widely used as a standard model
     
     Increasing size seemed to do the best
     
-    ![%20Explori%20bc626/Untitled%2016.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%2016.png)
+    ![Exploribc626/Untitled16.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled16.png)
     
 - T5 results: achieved SOTA on `most GLUE and super GLUE tasks`
     
     Note 11B model is 30 times larger than BERT
     
-    ![%20Explori%20bc626/Untitled%2017.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformer%20Explori%20bc626/Untitled%2017.png)
+    ![Exploribc626/Untitled17.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled17.png)
     
 
 ## Conclusion
