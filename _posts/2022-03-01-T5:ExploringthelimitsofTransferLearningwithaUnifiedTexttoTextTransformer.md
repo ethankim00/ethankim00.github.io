@@ -38,7 +38,7 @@ The T5 paper is a classic paper and is currently widely used as a standard model
 
 - In T5 the supervised pretraining object is `text to text with the target being the masked tokens`
     
-    ![Exploribc626/Untitled1.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled__1.png)
+    ![Exploribc626/Untitled1.png](/assets/images/ExploringthelimitsofTransferLearningwithaUnifiedTexttoTextTransformerExploribc626/Untitled_1.png)
     
 - T5 was trained for `1/4` as many pretraining steps as BERT base
     - note: it is also a much larger model
