@@ -3,7 +3,7 @@ title: "PromptBERT improving BERT sentence embeddings with prompts"
 last_modified_at: 2022-03-04T21:18:16-05:00
 categories: paper_review
 tags:
-	- Sentence Embeddings
+    - SentenceEmbeddings
     - Prompting
 ---
 ## Intro
