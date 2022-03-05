@@ -3,7 +3,7 @@ title: "NoisyTune: A Little Noise Can Help You Finetune"
 last_modified_at: 2022-03-04T21:31:46-05:00
 categories: paper_review
 tags:
-	- : Reading
+    - finetuning
 ---
 Type: Paper
 
