@@ -3,7 +3,7 @@ title: "Pretraining without Wordpieces: Learning Over a Vocabulary of Millions o
 last_modified_at: 2022-03-13T11:20:54-05:00
 categories: paper_review
 tags:
-	- Paper
+    - NLP
 ---
 ## Introduction
 
