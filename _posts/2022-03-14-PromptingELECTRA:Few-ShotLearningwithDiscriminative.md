@@ -1,5 +1,5 @@
 ---
-title: "Prompting ELECTRA: Few-Shot Learning with Discriminative"
+title: "Prompting ELECTRA: Few-Shot Learning with Discriminative Pre-Trained Models"
 last_modified_at: 2022-03-14T20:26:38-05:00
 categories: paper_review
 tags:
