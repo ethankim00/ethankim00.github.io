@@ -1,5 +1,5 @@
 ---
-title: "Deep Continuous Prompt for Contrastive Learning of Sentence"
+title: "Deep Continuous Prompt for Contrastive Learning of Sentence Embeddings"
 last_modified_at: 2022-03-16T21:20:55-05:00
 categories: paper_review
 tags:
