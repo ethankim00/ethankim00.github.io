@@ -70,9 +70,12 @@ author:
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/ethan-kim-9403a5149"
-    - label: Email"
+    - label: Email
       icon: 'fa-envelope-square'
       url: "mailto:ethan_kim@college.harvard.edu"
+    - label: "Twitter"
+      icon: fab fa-fw fa-twitter-square
+      url: https://twitter.com/ethan_kim00
  
 
 footer:
