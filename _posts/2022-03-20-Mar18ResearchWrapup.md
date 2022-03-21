@@ -3,7 +3,7 @@ title: "Mar 18 Research Wrapup"
 last_modified_at: 2022-03-20T16:28:16-05:00
 categories: paper_review
 tags:
-    - er Summaries:
+    - Paper Summaries
 ---
 Quick hit thoughts on trending papers?
 
