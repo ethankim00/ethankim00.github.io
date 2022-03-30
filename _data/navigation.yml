@@ -3,7 +3,7 @@ main:
     url: /posts/
   - title: "Resume"
     url: /resume/
-  - title: "Pulications"
-    url: /pulications/
+  - title: "Publications"
+    url: /publications/
   - title: "About"
     url: /about/
