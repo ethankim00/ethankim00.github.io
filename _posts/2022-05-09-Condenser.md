@@ -6,9 +6,6 @@ tags:
     - Machine Learning
 ---
 
-machinelearning::papers::Condenser
-
-machinelearning::applications::informationretrieval
 
 ## Introduction
 
