@@ -1,11 +1,10 @@
 ---
-title: "STRUCTURE AND SEMANTICS PRESERVING DOCUMENT"
+title: "STRUCTURE AND SEMANTICS PRESERVING DOCUMENT Representations"
 last_modified_at: 2022-06-08T20:37:56-05:00
 categories: paper_review
 tags:
-    - : Reading
+    - Reading
 ---
-Type: Paper
 
 ## Introduction
 
@@ -73,7 +72,7 @@ Type: Paper
 
 ## Conclusions
 
-Extensions to this paper count include:
+Extensions to this paper could include:
 
 - leveraging document relation structure in other domains
 - mean pooling text fragments to get a single document representation
