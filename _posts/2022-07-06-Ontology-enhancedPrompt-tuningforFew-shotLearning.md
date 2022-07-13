@@ -89,25 +89,3 @@ tags:
 ## Conclusions
 
 This paper extends the training of virtual tokens in DART to enhance few shot performance on new types of NLP tasks. The injection of text from an external knowledge ontology is very similar to the metadata shaping and TaBi methods. 
-
-## Reference
-
-```python
-@inproceedings{Ye_2022,
-	doi = {10.1145/3485447.3511921},
-  
-	url = {https://doi.org/10.1145%2F3485447.3511921},
-  
-	year = 2022,
-	month = {apr},
-  
-	publisher = {{ACM}
-},
-  
-	author = {Hongbin Ye and Ningyu Zhang and Shumin Deng and Xiang Chen and Hui Chen and Feiyu Xiong and Xi Chen and Huajun Chen},
-  
-	title = {Ontology-enhanced Prompt-tuning for Few-shot Learning},
-  
-	booktitle = {Proceedings of the {ACM} Web Conference 2022}
-}
-```
