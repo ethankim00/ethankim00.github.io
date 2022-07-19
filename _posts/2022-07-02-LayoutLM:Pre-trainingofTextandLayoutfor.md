@@ -1,9 +1,9 @@
 ---
-title: "LayoutLM: Pre-training of Text and Layout for"
+title: "LayoutLM: Pre-training of Text and Layout for Document Image Understanding"
 last_modified_at: 2022-07-02T21:34:29-05:00
 categories: paper_review
 tags:
-    - : Reading
+    - Reading
 ---
 Type: Paper
 
@@ -32,7 +32,7 @@ Type: Paper
     
 - Layout LM feeds `4 types` of position embeddings into a BERT style model
     
-    ![Untitled](/assets/images/LayoutLM:Pre-trainingofTextandLayoutfor/Untitled.png)
+    ![Untitled](/assets/images/LayoutLMPre-trainingofTextandLayoutfor/Untitled.png)
     
 - LayoutLM pretraining tasks are `masked visual language model` and multilabel document classification
     
@@ -52,7 +52,7 @@ Type: Paper
 
 - LayoutLM results: FUNSD is a word level form understanding dataset
     
-    ![Untitled](/assets/images/LayoutLM:Pre-trainingofTextandLayoutfor/Untitled 1.png)
+    ![Untitled](/assets/images/LayoutLMPre-trainingofTextandLayoutfor/Untitled 1.png)
     
 
 ## Conclusions
