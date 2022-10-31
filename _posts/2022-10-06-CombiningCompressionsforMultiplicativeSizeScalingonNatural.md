@@ -3,7 +3,7 @@ title: "Combining Compressions for Multiplicative Size Scaling on Natural"
 last_modified_at: 2022-10-06T21:46:31-05:00
 categories: paper_review
 tags:
-    - : Reading
+    - Reading
 ---
 Type: Paper
 
