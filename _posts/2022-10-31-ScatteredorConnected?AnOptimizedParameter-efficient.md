@@ -78,6 +78,6 @@ This paper presents some good theoretical analysis and. It’s clear that if suc
   
 	title = {Scattered or Connected? An Optimized Parameter-efficient Tuning Approach for Information Retrieval},
   
-	booktitle = {Proceedings of the 31st {ACM} International Conference on Information {\&}amp$\mathsemicolon$ Knowledge Management}
+	booktitle = {Proceedings of the 31st {ACM} International Conference on Information and Knowledge Management}
 }
 ```
