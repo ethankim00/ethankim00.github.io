@@ -71,8 +71,7 @@ This paper presents some good theoretical analysis and. It’s clear that if suc
 	year = 2022,
 	month = {oct},
   
-	publisher = {{ACM}
-},
+	publisher = {{ACM}},
   
 	author = {Xinyu Ma and Jiafeng Guo and Ruqing Zhang and Yixing Fan and Xueqi Cheng},
   
