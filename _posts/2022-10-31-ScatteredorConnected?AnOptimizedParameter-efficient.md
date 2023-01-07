@@ -3,7 +3,7 @@ title: "Scattered or Connected? An Optimized Parameter-efficient"
 last_modified_at: 2022-10-31T18:39:43-05:00
 categories: paper_review
 tags:
-    - : Reading
+    - Reading
 ---
 Type: Paper
 
