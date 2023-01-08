@@ -94,4 +94,10 @@ Given this fact we can theorize that the gains from 62B to 540B parameters are d
 	author = {Wei, Jason and Tay, Yi and Bommasani, Rishi and Raﬀel, Colin and Zoph, Barret and Borgeaud, Sebastian and Yogatama, Dani and Bosma, Maarten and Zhou, Denny and Metzler, Donald and Chi, Ed H and Hashimoto, Tatsunori and Vinyals, Oriol and Liang, Percy and Dean, Jeﬀ and Fedus, William},
 	file = {Wei et al. - Emergent Abilities of Large Language Models.pdf:/Users/ethankim/Zotero/storage/6QZFBPBV/Wei et al. - Emergent Abilities of Large Language Models.pdf:application/pdf},
 }
+@article{chowdhery2022palm,
+  title={Palm: Scaling language modeling with pathways},
+  author={Chowdhery, Aakanksha and Narang, Sharan and Devlin, Jacob and Bosma, Maarten and Mishra, Gaurav and Roberts, Adam and Barham, Paul and Chung, Hyung Won and Sutton, Charles and Gehrmann, Sebastian and others},
+  journal={arXiv preprint arXiv:2204.02311},
+  year={2022}
+}
 ```
