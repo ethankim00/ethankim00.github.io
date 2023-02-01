@@ -7,7 +7,7 @@ layout: publications
 
 ## Selected Publications
 
-[Differentiable Entailment For Parameter Efficient Few Shot Learning](../assets/papers/diff_entail_preprint.pdf)
+[Differentiable Entailment For Parameter Efficient Few Shot Learning](https://arxiv.org/pdf/2301.13345.pdf)
     
 Ethan Kim, Jerry Yang
 
