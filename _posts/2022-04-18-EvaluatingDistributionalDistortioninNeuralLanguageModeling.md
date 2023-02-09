@@ -9,7 +9,6 @@ tags:
 
 ## Introduction
 
-- What is the name of the Distributional Distortion paper?
     
     > ****Evaluating Distributional Distortion in Neural Language Modeling****
     > 

@@ -1,5 +1,5 @@
 ---
-title: "Introducing Neural Bag of Whole-Words with ColBERTer:"
+title: "Introducing Neural Bag of Whole-Words with ColBERTer"
 last_modified_at: 2022-04-27T21:18:50-05:00
 categories: paper_review
 tags:

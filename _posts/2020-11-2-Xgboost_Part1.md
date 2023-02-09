@@ -1,8 +1,8 @@
 ---
 title: "XGboost Part 1: Gradient Boosting"
-date: 2020-11-02T15:34:30-04:00
+last_modified_at: 2020-11-02T15:34:30-04:00
 categories:
-  - method
+  - 
 tags:
   - xgboost
 ---

@@ -5,7 +5,6 @@ categories: paper_review
 tags:
     - Reading
 ---
-Type: Paper
 
 ## Introduction
 
